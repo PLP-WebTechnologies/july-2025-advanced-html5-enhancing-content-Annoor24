@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    <title>Multi-Section Web Page</title>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Page</h1>
+</header>
+
+<!-- List Section -->
+<section>
+    <h2>My Hobbies</h2>
+    <ul>
+        <li>Reading books</li>
+        <li>Playing video games & football</li>
+        <li>Listening to calm music</li>
+    </ul>
+
+    <h2>Steps to Brew Coffee</h2>
+    <ol>
+        <li>Boil water</li>
+        <li>Add coffee grounds</li>
+        <li>Pour hot water</li>
+        <li>Stir and serve</li>
+    </ol>
+</section>
+
+<!-- Table Section -->
+<section>
+    <h2>Student Grades</h2>
+    <table border="3">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ali</td>
+                <td>Mathematics</td>
+                <td>A1</td>
+            </tr>
+            <tr>
+                <td>Zarah</td>
+                <td>Science</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <td>Nuruddin</td>
+                <td>Physics</td>
+                <td>A1</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- Media Section -->
+<section>
+    <h2>Media Showcase</h2>
+    <img src="Snowfall.jpg" alt="Beautiful Snowfall Image" width="200">
+    <p>Listen to relaxing background recitation:</p>
+    <audio controls autoplay loop>
+        <source src="112-al-ikhlas.mp3" type="audio/mp3">
+    </audio>
+    <br>
+    <p>Watch this amazing video:</p>
+    <video controls muted width="200">
+        <source src="50quran_-20220315-0001.mp4" type="video/mp4">         
+    </video>
+</section>
+
+<!-- HTML5 Form Section -->
+<section>
+    <h2>Registration Form</h2>
+    <form action="submit.html" method="post" autocomplete="on">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Nuruddin Kabir" required minlength="25">
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Details</legend>
+            
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Choose a username" required pattern="[A-Za-z0-9]{5,}">
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Min 8 characters" required minlength="8">
+            
+            <label for="confirmpass">Confirm Password:</label>
+            <input type="password" id="confirmpass" name="confirmpass" required minlength="8">
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Information</legend>
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select your gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+
+            <label for="bio">Short Bio:</label>
+            <textarea id="bio" name="bio" placeholder="Tell us about yourself..." rows="4" required></textarea>
+            
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Agreement</legend>
+            <label>
+                <input type="checkbox" name="terms" required>
+                I agree to the terms and conditions
+            </label>
+        </fieldset>
+
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Web Page | Designed for Practice</p>
+</footer>
+
+</body>
+</html>
